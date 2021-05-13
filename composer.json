@@ -1,0 +1,38 @@
+{
+    "name": "d3jn/php-dev",
+    "description": "Variety of commonly used helper classes/tools for PHP projects",
+    "require": {
+        "php": "^7.3",
+        "webmozart/assert": "^1.9"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "phan/phan": "^4.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "platform": {
+            "php": "7.3"
+        }
+    },
+    "autoload": {
+        "psr-4": { 
+            "D3jn\\PhpDev\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { 
+            "D3jn\\PhpDev\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Serhii Yaniuk",
+            "email": "serhiiyaniuk@gmail.com"
+        }
+    ]
+}
